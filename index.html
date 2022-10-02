@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>Coolr</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles/site.css" />
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+        <a href="index.html" id="logo">
+            <div class="row">
+            <img src="images/drop2.png" alt="logo" id="logo-img">
+            <p class="logo-text">Coolr</p>
+            </div>
+        </a>
+        <svg id="cooler" width="200" height="400">
+
+        </svg>
+
+        <script>
+            const svg = d3.select("svg#cooler");
+            const width = svg.attr("width");
+            const height = svg.attr("height");
+            // box
+            svg.append("rect")
+                .attr("fill", "#91B0B8")
+                .attr("x", 40)
+                .attr("y", 167)
+                .attr("height", 233)
+                .attr("width", 120)
+            // water jug
+            svg.append("rect")
+                .attr("fill", "#30A6C0")
+                .attr("x", 40)
+                .attr("y", 0)
+                .attr("height", 160)
+                .attr("width", 120)
+                .attr("rx", 25)
+            // water
+            svg.append("rect")
+                .attr("fill", "#57B6C9")
+                .attr("x", 45)
+                .attr("y", 75)
+                .attr("height", 80)
+                .attr("width", 110)
+                .attr("rx", 25)
+            svg.append("rect")
+                .attr("fill", "#57B6C9")
+                .attr("x", 45)
+                .attr("y", 60)
+                .attr("height", 80)
+                .attr("width", 110)
+            // connector
+            svg.append("rect")
+                .attr("fill", "#3e899e")
+                .attr("x", 60)
+                .attr("y", 160)
+                .attr("height", 7)
+                .attr("width", 80)
+                .attr("rx",5)
+            // ridges
+            svg.append("rect")
+                .attr("fill", "#6EC7D7")
+                .attr("x", 35)
+                .attr("y", 15)
+                .attr("height", 18)
+                .attr("width", 130)
+                .attr("rx", 3)
+            svg.append("rect")
+                .attr("fill", "#6EC7D7")
+                .attr("x", 35)
+                .attr("y", 100)
+                .attr("height", 18)
+                .attr("width", 130)
+                .attr("rx", 3)
+            svg.append("rect")
+                .attr("fill", "#6EC7D7")
+                .attr("x", 35)
+                .attr("y", 125)
+                .attr("height", 18)
+                .attr("width", 130)
+                .attr("rx", 3)
+            // faucet box
+            svg.append("rect")
+                .attr("fill", "#618990")
+                .attr("x", 60)
+                .attr("y", 200)
+                .attr("height", 80)
+                .attr("width", 80)
+            // nozzles
+            svg.append("rect")
+                .attr("fill", "#1362A3")
+                .attr("x", 80)
+                .attr("y", 220)
+                .attr("height", 35)
+                .attr("width", 15)
+                .attr("rx", 2)
+            svg.append("rect")
+                .attr("fill", "#B82421")
+                .attr("x", 105)
+                .attr("y", 220)
+                .attr("height", 35)
+                .attr("width", 15)
+                .attr("rx", 2)
+
+        </script>
+        <form>
+        <div class="label-input">
+            <label for="question" id="ask">What are you interested in today?</label>
+            <div data-aos="fade-down">
+            <div class="row-articles">
+                <div class="label-input articles">
+                    <a href="schedule.html" onclick="window.open('https://www.wsj.com/articles/the-rich-famous-and-in-between-vie-for-elon-musks-attention-11664574552?mod=business_lead_pos5')">
+                    <img src="images/musk.jpeg" alt="Musk news article" class="article">
+                    <p class="title">The Rich, Famous and In-Between Vie for Elon Musk’s Attention</p>
+                    </a>
+                </div>
+                <div class="label-input articles">
+                    <a href="schedule.html" onclick="window.open('https://www.wsj.com/articles/hip-hop-streaming-era-slowdown-11664572115?mod=hp_featst_pos4')">
+                    <img src="images/music.jpeg" alt="Music news article" class="article">
+                    <p class="title">Hip-Hop Is the Hottest Music of the Streaming Era. Is It Now Cooling Down?</p>
+                    </a>
+                </div>
+                <div class="label-input articles">
+                    <a href="schedule.html" onclick="window.open('https://www.wsj.com/articles/hopper-travel-rewards-games-11663959822?mod=life_work_lead_pos5')">
+                    <img src="images/coin.jpeg" alt="Travel news article" class="article">
+                    <p class="title">Travel Apps Are Betting That Paying You Will Win Your Business</p>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </form>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+    </body>
+</html>
